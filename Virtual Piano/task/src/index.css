@@ -1,0 +1,89 @@
+/* global */
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* body */
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #94abef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* main / container */
+.container {
+  /*border: cyan 1px solid;*/
+}
+
+/* key setting */
+.white-keys kbd {
+  color: black;
+  background-color: white;
+  border: black 2px solid;
+  margin: -3px;
+}
+
+.white-keys kbd {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 8%;
+  height: 9rem;
+  width: 3.3rem;
+  text-align: center;
+}
+
+.black-keys {
+  position: absolute;
+  margin-left: 2rem;
+}
+
+.black-keys kbd {
+  color: white;
+  background-color: black;
+  border: black 2px solid;
+  margin-top: -4px;
+  margin-right: 4px;
+}
+
+#KeyT {
+  margin-left: 60px;
+}
+
+.black-keys kbd {
+  /*position: absolute;*/
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 8%;
+  height: 6rem;
+  width: 2.7rem;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 550px) {
+  .white-keys kbd {
+    height: 6rem;
+    width: 2.2rem;
+  }
+
+  .black-keys {
+    margin-left: 21px;
+  }
+
+  #KeyT {
+    margin-left: 40px;
+  }
+
+  .black-keys kbd {
+    margin-right: 3px;
+    height: 3.5rem;
+    width: 1.8rem;
+  }
+}
